@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 from email.utils import COMMASPACE
 
 from odoo import fields, models
@@ -14,7 +14,7 @@ class MailMail(models.Model):
     def _tracking_email_prepare(self, email):
         """Prepare email.tracking.email record values"""
         ts = time.time()
-        dt = datetime.utcfromtimestamp(ts)
+        dt = datetime.fromtimestamp(ts, timezone.utc)
         email_to_list = email.get("email_to", [])
         email_to = COMMASPACE.join(email_to_list)
         return {
@@ -38,8 +38,8 @@ class MailMail(models.Model):
         X-Odoo-MailTracking-ID header there.
         """
         emails = super()._prepare_outgoing_list(mail_server, recipients_follower_status)
-        for email in emails:
-            vals = self._tracking_email_prepare(email)
-            tracking_email = self.env["mail.tracking.email"].sudo().create(vals)
-            tracking_email.tracking_img_add(email)
+        tracking_vals_list = [self._tracking_email_prepare(email) for email in emails]
+        trackings = self.env["mail.tracking.email"].sudo().create(tracking_vals_list)
+        for email, tracking in zip(emails, trackings, strict=True):
+            tracking.tracking_img_add(email)
         return emails
