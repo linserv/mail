@@ -46,7 +46,7 @@ addon | version | maintainers | summary
 [mail_message_search](mail_message_search/) | 18.0.1.0.2 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | Mail Message Search
 [mail_no_user_assign_notification](mail_no_user_assign_notification/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Mail No user Assign Notification
 [mail_notification_clean_status_error](mail_notification_clean_status_error/) | 18.0.1.0.0 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Extend Odoo scheduled action to also delete notifications in error.
-[mail_notification_custom_subject](mail_notification_custom_subject/) | 18.0.1.0.0 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Apply a custom subject to mail notifications
+[mail_notification_custom_subject](mail_notification_custom_subject/) | 18.0.1.0.1 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Apply a custom subject to mail notifications
 [mail_optional_autofollow](mail_optional_autofollow/) | 18.0.1.0.0 |  | Choose if you want to automatically add new recipients as followers on mail.compose.message
 [mail_optional_follower_notification](mail_optional_follower_notification/) | 18.0.1.0.0 |  | Choose to notify followers on mail.compose.message
 [mail_outbound_static](mail_outbound_static/) | 18.0.1.0.1 |  | Allows you to configure the from header for a mail server.
@@ -61,7 +61,7 @@ addon | version | maintainers | summary
 [mail_suggested_recipient_unchecked](mail_suggested_recipient_unchecked/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Mail suggested recipient unchecked
 [mail_template_domain](mail_template_domain/) | 18.0.1.0.0 |  | Filter mail templates by domain on the active record
 [mail_template_substitute](mail_template_substitute/) | 18.0.1.0.0 |  | This module allows to create substitution rules for mail templates.
-[mail_tracking](mail_tracking/) | 18.0.1.0.9 |  | Email tracking system for all mails sent
+[mail_tracking](mail_tracking/) | 18.0.1.0.11 |  | Email tracking system for all mails sent
 [mail_tracking_mailgun](mail_tracking_mailgun/) | 18.0.1.0.0 |  | Mail tracking and Mailgun webhooks integration
 [mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 18.0.1.0.0 |  | Improve mass mailing email tracking
 [outgoing_email_by_model](outgoing_email_by_model/) | 18.0.1.0.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Outgoing Email by Model
